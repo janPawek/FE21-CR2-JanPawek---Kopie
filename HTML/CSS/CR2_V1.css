@@ -1,0 +1,40 @@
+/* Navbar styling */
+.navbar {
+  background-color: black;
+  color: white;
+}
+
+.navbar-brand {
+  order: -1; /* Move brand to the start */
+}
+
+/* Priority button styling */
+.nBtn {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+/* Sort button styling */
+.sortBtn {
+  background-color: #007bff;
+  border-color: #007bff;
+  margin-left: 10px;
+}
+
+/* Change SVG color to white */
+#nav_img svg path,
+.card-text svg path {
+  fill: white;
+}
+
+/* Responsive layout adjustments */
+@media screen and (max-width: 768px) {
+  main #result {
+    grid-template-columns: 1fr 1fr; /* Two columns for medium screens */
+  }
+}
+@media screen and (max-width: 480px) {
+  main #result {
+    grid-template-columns: 1fr; /* One column for small screens */
+  }
+}/*# sourceMappingURL=CR2_V1.css.map */

@@ -1,0 +1,35 @@
+.hero{
+    height: 40vh;
+    background-image: url("img/hero.jpg");
+    background-size: cover;
+    background-position: bottom;
+    display: grid;
+    place-content: center;
+}
+
+.hero_overlay{
+    background-color: hsla(0 0 0% / .4);
+    padding: 1.5rem;
+    color: white;
+}
+.myImg{
+    width: 90%;
+    margin-top: 1rem;
+}
+
+.notificationContainer{
+    position: relative;
+}
+
+.notifications{
+    display: grid;
+    place-content: center;
+    font-size: 10px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: red;
+    top: 0;
+    right: 20px;
+}

@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+header {
+  background-color: black;
+  // box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sticky-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  margin-bottom: 10px;
+}
+
+//   .logo {
+//     font-family: 'Great Vibes', cursive; 
+//     font-size: 24px;
+//     color: black;
+//   }
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  text-decoration: none;
+  color: grey;
+}
+.nav-items a {font-size: large;
+  text-decoration: none;
+  color: grey;
+  }
+  a:hover {color: grey;
+      font-size: 1.5rem;
+  transform: translate(10px, -5px);
+ 
+  }
+// Search-Buttons
+.container {
+  max-width: 600px;
+  display: flex;
+  column-gap: 30px;
+  margin: 0;
+  text-align: center;
+  color: white;
+  img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+  }
+}
+
+.search-container {
+  display: flex;
+  gap: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  font-size: 16px;
+
+}
+
+button {
+  font-size: 16px;
+  background-color: black;
+  color: green;
+  border: 2px solid green;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+// --------------------
+
+  // media
+@media screen and (max-width: 480px) {
+    .content {
+      grid-template-columns: 1fr;
+      .grid {
+        height: 60vw;
+      }
+    }
+    .links {
+      a {
+        font-size: 14px;
+      }
+    }
+  }
+  @media all and (min-width: 481px) and (max-width: 768px) {
+    .content {
+      grid-template-columns: 1fr 1fr;
+      .grid {
+        height: 30vw;
+      }
+    }
+  }
+  @media all and (min-width: 769px) {
+    .content {
+      grid-template-columns: 1fr 1fr 1fr;
+      .grid {
+        height: 20vw;
+      }
+    }
+  }
+ 
+//  footer 
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    gap: 20px;
+  
+    .footer-line {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     gap: 20px;  
+      p {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        padding-right: 20px;
+  
+        .border {
+          border: 1px solid white;
+          padding-right: 30px; 
+          margin-right: 10px; 
+        }
+  
+        .Sign {
+          color: white;
+          column-gap: 30px;
+          background-color: aqua;
+          }
+        a {
+          text-decoration: none;
+          color: white;
+          padding: 0 10px; 
+          position: relative;
+  
+          &:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            width: 1px;
+            height: 70%; 
+            background-color: black;
+          }
+        }
+      }
+  
+      img {
+        width: 30px;
+        height: 30px;
+        margin: 0 10px;
+      }
+    }
+  }
